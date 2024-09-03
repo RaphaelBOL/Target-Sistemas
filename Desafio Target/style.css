@@ -1,0 +1,182 @@
+@font-face {
+  font-family: 'Gotham HTF Book';
+  src: url('../fonts/GothamHTF-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham HTF Light';
+  src: url('../fonts/GothamHTF-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham HTF Medium';
+  src: url('../fonts/GothamHTF-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  height: 100dvh;
+}
+
+body{
+  background-color: #161616;
+}
+
+.content{
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 52px;
+  gap: 24px;
+  background-color: rgba(33, 37, 39, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(97, 109, 114, 0.5);
+  border-radius: 3px;
+}
+
+h1,
+h2{
+  font-family: 'Gotham HTF Light', sans-serif;
+  color: #ED145B;
+}
+
+h2{
+  margin-bottom: 18px;
+}
+
+p{
+  font-family: 'Gotham HTF Book', sans-serif;
+  font-size: 1rem;
+  color: #616D72;
+}
+
+.form{
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+input{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ED145B;
+  outline: none;
+  height: 30px;
+  caret-color: #ED145B;
+  font-family: 'Gotham HTF Book', sans-serif;
+  font-size: 14px;
+  color: #616D72;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+
+button{
+  background-color: transparent;
+  padding: 7px 24px;
+  border: #ED145B 1px solid;
+  border-radius: 3px;
+  outline: none;
+  font-family: 'Gotham HTF Book', sans-serif;
+  font-size: 1rem;
+  color: #ED145B;
+  transition: all 0.2s ease;
+}
+
+button:hover{
+  scale: 0.95;
+  background-color: #ED145B;
+  box-shadow: 0 0 100px rgba(237, 20, 91, 0.4);
+  color: #000;
+}
+
+#result{
+  color: #ED145B;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  outline: none;
+}
+
+.faturamento-container{
+  width: 100%;
+  max-height: 160px;
+  overflow-y: scroll;
+  padding: 0 5px 0 0;
+}
+
+/* Estilização da barra de rolagem para Webkit (Chrome, Safari, Edge) */
+.faturamento-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.faturamento-container::-webkit-scrollbar-track {
+  background: #252525;
+  border-radius: 5px;
+}
+
+.faturamento-container::-webkit-scrollbar-thumb {
+  background-color: #ED145B;
+  border-radius: 5px;
+}
+
+th,td{
+  border: 1px solid #616D72;
+}
+
+th{
+  font-family: 'Gotham HTF Light', sans-serif;
+  font-size: 1.1rem;
+  padding: 7px;
+  color: #ED145B;
+}
+
+th:hover{
+  color: #000;
+}
+
+td{
+  font-family: 'Gotham HTF Book', sans-serif;
+  text-align: center;
+  padding: 3px;
+}
+
+tr{
+  color: #616D72;
+}
+
+tr:hover{
+background-color: #ED145B;
+color: #000;
+}
+
+thead:hover th {
+  color: #000;
+}
